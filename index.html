@@ -1,7 +1,7 @@
 <html>
   <head>
-    <meta name="generator"
-    content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <meta name="eigenkontrolle-kuh"
+    content="webbasierte App zur Eigenkontrolle von Kühen im eigenen Betrieb" />
 	
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	
@@ -13,6 +13,7 @@
 	<meta name = "description" content = "eigenkontrolle-kuh ++ webbasierte App zur Eigenkontrolle von Kühen im eigenen Betrieb ++">
 	<meta name = "keywords" content = "eigenkontrolle, kuh, benz, barbara, app, landesbeauftragte, tierschutz, hfwu, kontrolle, betrieb">
     <meta name = "application-name" content = "eigenkontrolle-kuh">   
+	<meta name="mobile-web-app-capable" content="yes"><link rel="icon" sizes="16x16" href="images/launcher-icon-4x.png">
    <!-- Include jQuery Mobile stylesheets -->
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
     <!-- include manifest file  -->
@@ -659,7 +660,7 @@ Eigenkontrolle nach §11 Abs. 8 TierSchG, 2013 nachzukommen</p>
 Die hinterlegten Zielgrößen für die tierbezogenen Indikatoren finden Sie <a href = "Kriterienkatalog.pdf" target="_blank" download> hier </a> </p>
         <p>In der Herdenbetrachtung werden bestimmte Verhaltensweisen der gesamten Herde gezählt, indem auf das entsprechende Beispielbild getippt
         wird. Alternativ kann die Gesamtanzahl auch direkt in das Feld unter dem Bild eingetragen werden. Es werden alle Tiere der
-        Erfassungsgruppe einbezogen. <br> Bei der Einzeltierbetrachtung werden alle Tiere einer Fokusgruppe kontrolliert. Dort reicht ein Tippen auf das passende Beispielbild für das Untersuchungsmerkmal an der jeweiligen Körperregion. Nachdem alle Tiere der Fokusgruppe kontrolliert wurden, werden Sie automatisch zur Auswertung weitergeleitet.
+        Herde einbezogen. <br> Bei der Einzeltierbetrachtung werden alle Tiere einer Fokusgruppe kontrolliert. Dort reicht ein Tippen auf das passende Beispielbild für das Untersuchungsmerkmal an der jeweiligen Körperregion. Nachdem alle Tiere der Fokusgruppe kontrolliert wurden, werden Sie automatisch zur Auswertung weitergeleitet.
 		<br> Grundsätzlich können Sie immer auf das i tippen, wenn Sie eine Hilfestellung benötigen. </p>
 		<input type = "hidden" data-role = "date" id = "datum" value = "" />
         <h3>Viel Erfolg</h3>
@@ -697,6 +698,7 @@ Die hinterlegten Zielgrößen für die tierbezogenen Indikatoren finden Sie <a h
           <a href="#eutergesundheit">Mit der Eigenkontrolle beginnen</a>
         </h1>
       </div>
+	  
 	  <p> Zum Impressum und zur Datenschutzerklärung gelangen Sie <a href = "impressum.html"> hier </a> </p>
     </div>
 	</div>
@@ -734,7 +736,9 @@ Die hinterlegten Zielgrößen für die tierbezogenen Indikatoren finden Sie <a h
 		</div>
 		</div>
 		<div class = "ui-block-c" style = "width: 35%">
-		<input type="number" name="anteil_Eutergesunde_Kuehe" id="anteil_Eutergesunde_Kuehe" value="" required/>		
+		<form>
+		<input type="number" min = "0" max = "100" name="anteil_Eutergesunde_Kuehe" id="anteil_Eutergesunde_Kuehe" value=""/>		
+		</form>
 		</div>
 		<div class = "ui-block-d" style = "width: 10%"> 
 		<p> % </p>
@@ -752,7 +756,9 @@ Die hinterlegten Zielgrößen für die tierbezogenen Indikatoren finden Sie <a h
 		</div>
 		</div>
 		<div class = "ui-block-c" style = "width: 35%">
-		<input type="number" name="neuerkrankungsrate" id="neuerkrankungsrate" value="" required/>		
+		<form>
+		<input type="number" min = "0" max = "100" name="neuerkrankungsrate" id="neuerkrankungsrate" value=""/>		
+		</form>
 		</div>
 		<div class = "ui-block-d" style = "width: 10%"> 
 		<p> % </p>
@@ -770,7 +776,9 @@ Die hinterlegten Zielgrößen für die tierbezogenen Indikatoren finden Sie <a h
 		</div>
 		</div>
 		<div class = "ui-block-c" style = "width: 35%">
-		<input type="number" name="schlechte_Heilungsaussichten" id="schlechte_Heilungsaussichten" value="" required/>		
+		<form>
+		<input type="number" min = "0" max = "100" name="schlechte_Heilungsaussichten" id="schlechte_Heilungsaussichten" value="" required/>	
+		</form>	
 		</div>
 		<div class = "ui-block-d" style = "width: 10%"> 
 		<p> % </p>
@@ -778,13 +786,24 @@ Die hinterlegten Zielgrößen für die tierbezogenen Indikatoren finden Sie <a h
 		</div>
         
       </div>
+	  
       <div data-role="footer" data-position = "fixed">
         <div class="ui-grid-a">
           <div class="ui-block-a">
             <a href="#start" class ="ui-btn ui-icon-arrow-l ui-btn-icon-left" >Zurück</a>
           </div>
           <div class="ui-block-b">
-            <a class = "ui-btn ui-icon-arrow-r ui-btn-icon-right" href="#Liegeverhalten_Herde" >Weiter</a>
+		  <!-- ACHTUNG HIER WIRD GEARBEITET  -->
+		   <!-- ACHTUNG HIER WIRD GEARBEITET  -->
+		    <!-- ACHTUNG HIER WIRD GEARBEITET  -->
+			 <!-- ACHTUNG HIER WIRD GEARBEITET  -->
+			  <!-- ACHTUNG HIER WIRD GEARBEITET  -->
+			   <!-- ACHTUNG HIER WIRD GEARBEITET  -->
+			    <!-- ACHTUNG HIER WIRD GEARBEITET  -->
+				 <!-- ACHTUNG HIER WIRD GEARBEITET  -->
+				  <!-- ACHTUNG HIER WIRD GEARBEITET  -->
+				  <!-- saveTOLOCAL -->
+            <a class = "ui-btn ui-icon-arrow-r ui-btn-icon-right" href="#Liegeverhalten_Herde">Weiter</a>
           </div>
         </div>
       </div>
@@ -1029,7 +1048,7 @@ Die hinterlegten Zielgrößen für die tierbezogenen Indikatoren finden Sie <a h
       <div data-role="main" class="ui-content">
         <p>Ab jetzt werden zufällig ausgewählte Einzeltiere (z.B jede dritte Kuh im Fressgitter) betrachtet. Bitte klicken Sie jeweils auf das passende Symptom. Bei mehreren Befunden an
         einer Lokalisation wird lediglich der gravierendste erfasst. Geben Sie bitte zunächst an, wie viele Kühe sich in der
-        Erfassungsgruppe befinden und drücken Sie anschlie&szlig;end auf &quot;Berechnen.&quot; Alternativ kann die gewünschte Anzahl an
+        Herde befinden und drücken Sie anschlie&szlig;end auf &quot;Berechnen.&quot; Alternativ kann die gewünschte Anzahl an
         Tieren direkt in das Feld &quot;Fokusgruppengröße&quot; eingetragen werden.</p>
         <div class="ui-grid-a my-breakpoint">
           <div class="ui-block-a">
@@ -1041,7 +1060,7 @@ Die hinterlegten Zielgrößen für die tierbezogenen Indikatoren finden Sie <a h
           <input type="number" name="tiere_Anzahl" id="tiere_Anzahl" value="" /> 
           <a data-role="button" href="#Fokusgruppengroesse_Info" data-rel="popup" data-icon="info" data-iconpos="notext"></a>
           <div data-role="popup" id="Fokusgruppengroesse_Info">
-            <p>Die Fokusgruppe besteht aus 20% zufällig ausgewählten Kühe der Erfassungsgruppe. Mindestens aber aus 20 Tieren.</p>
+            <p>Die Fokusgruppe besteht aus 20% zufällig ausgewählten Kühe der Herde. Mindestens aber aus 20 Tieren.</p>
           </div>
           <input type="hidden" name="save_Number" id="save_Number" value="" /></div>
         </div>
@@ -1066,17 +1085,11 @@ Die hinterlegten Zielgrößen für die tierbezogenen Indikatoren finden Sie <a h
     <!--  Technopathien - Karpalgelenk (vorne)  -->
     <div data-role="page" id="karpalgelenk_Vorne">
 	<div data-role = "header">
-        <a href = "#popupMenuKarpalgelenk"  data-rel = "popup" class = "ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid ui-btn-icon-notext"> Navigation </a>
+        <a href = "#popupMenuKarpalgelenk"  data-rel = "popup" class = "ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-back ui-btn-icon-notext"> Navigation </a>
 		<div data-role = "popup" id = "popupMenuKarpalgelenk">
 		<ul data-role = "listview" data-inset = "true" >
-		<li>
-            <a href="#start">Herdenbetrachtung</a>
-          </li>
           <li>
-            <a href="#transition_In_Den_Stall">Einzeltierbetrachtung</a>
-          </li>
-          <li>
-            <a href="#auswertung">Auswertung</a>
+            <a href="#transition_In_Den_Stall">Neustart</a>
           </li>
 		</ul>
 		</div>		
@@ -1138,20 +1151,20 @@ Die hinterlegten Zielgrößen für die tierbezogenen Indikatoren finden Sie <a h
     <!-- \\nacken -->
     <div data-role="page" id="nacken">
 	<div data-role = "header">
-        <a href = "#popupMenuNacken"  data-rel = "popup" class = "ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid ui-btn-icon-notext"> Navigation </a>
-		<div data-role = "popup" id = "popupMenuNacken">
-		<ul data-role = "listview" data-inset = "true" >
-		<li>
-            <a href="#start">Herdenbetrachtung</a>
-          </li>
-          <li>
-            <a href="#transition_In_Den_Stall">Einzeltierbetrachtung</a>
-          </li>
-          <li>
-            <a href="#auswertung">Auswertung</a>
-          </li>
-		</ul>
-		</div>		
+        <!-- <a href = "#popupMenuNacken"  data-rel = "popup" class = "ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid ui-btn-icon-notext"> Navigation </a> -->
+		<!-- <div data-role = "popup" id = "popupMenuNacken"> -->
+		<!-- <ul data-role = "listview" data-inset = "true" > -->
+		<!-- <li> -->
+            <!-- <a href="#start">Herdenbetrachtung</a> -->
+          <!-- </li> -->
+          <!-- <li> -->
+            <!-- <a href="#transition_In_Den_Stall">Einzeltierbetrachtung</a> -->
+          <!-- </li> -->
+          <!-- <li> -->
+            <!-- <a href="#auswertung">Auswertung</a> -->
+          <!-- </li> -->
+		<!-- </ul> -->
+		<!-- </div>		 -->
 	  <h1> Verletzung Nacken </h1>
 	  </div>
       <div data-role="main" class="ui-content">
@@ -1209,20 +1222,20 @@ Die hinterlegten Zielgrößen für die tierbezogenen Indikatoren finden Sie <a h
     <!-- rÃ¼cken -->
     <div data-role="page" id="ruecken">
 	<div data-role = "header">
-        <a href = "#popupMenuRuecken"  data-rel = "popup" class = "ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid ui-btn-icon-notext"> Navigation </a>
-		<div data-role = "popup" id = "popupMenuRuecken">
-		<ul data-role = "listview" data-inset = "true" >
-		<li>
-            <a href="#start">Herdenbetrachtung</a>
-          </li>
-          <li>
-            <a href="#transition_In_Den_Stall">Einzeltierbetrachtung</a>
-          </li>
-          <li>
-            <a href="#auswertung">Auswertung</a>
-          </li>
-		</ul>
-		</div>		
+        <!-- <a href = "#popupMenuRuecken"  data-rel = "popup" class = "ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid ui-btn-icon-notext"> Navigation </a> -->
+		<!-- <div data-role = "popup" id = "popupMenuRuecken"> -->
+		<!-- <ul data-role = "listview" data-inset = "true" > -->
+		<!-- <li> -->
+            <!-- <a href="#start">Herdenbetrachtung</a> -->
+          <!-- </li> -->
+          <!-- <li> -->
+            <!-- <a href="#transition_In_Den_Stall">Einzeltierbetrachtung</a> -->
+          <!-- </li> -->
+          <!-- <li> -->
+            <!-- <a href="#auswertung">Auswertung</a> -->
+          <!-- </li> -->
+		<!-- </ul> -->
+		<!-- </div>		 -->
 	  <h1> Verletzung Rücken </h1>
 	  </div>
       <div data-role="main" class="ui-content">
@@ -1280,20 +1293,20 @@ Die hinterlegten Zielgrößen für die tierbezogenen Indikatoren finden Sie <a h
     <!-- hinterbein -->
     <div data-role="page" id="hinterbein">
       <div data-role = "header">
-        <a href = "#popupMenuHinterbein"  data-rel = "popup" class = "ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid ui-btn-icon-notext"> Navigation </a>
-		<div data-role = "popup" id = "popupMenuHinterbein">
-		<ul data-role = "listview" data-inset = "true" >
-		<li>
-            <a href="#start">Herdenbetrachtung</a>
-          </li>
-          <li>
-            <a href="#transition_In_Den_Stall">Einzeltierbetrachtung</a>
-          </li>
-          <li>
-            <a href="#auswertung">Auswertung</a>
-          </li>
-		</ul>
-		</div>		
+        <!-- <a href = "#popupMenuHinterbein"  data-rel = "popup" class = "ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid ui-btn-icon-notext"> Navigation </a> -->
+		<!-- <div data-role = "popup" id = "popupMenuHinterbein"> -->
+		<!-- <ul data-role = "listview" data-inset = "true" > -->
+		<!-- <li> -->
+            <!-- <a href="#start">Herdenbetrachtung</a> -->
+          <!-- </li> -->
+          <!-- <li> -->
+            <!-- <a href="#transition_In_Den_Stall">Einzeltierbetrachtung</a> -->
+          <!-- </li> -->
+          <!-- <li> -->
+            <!-- <a href="#auswertung">Auswertung</a> -->
+          <!-- </li> -->
+		<!-- </ul> -->
+		<!-- </div>		 -->
 	  <h1> Verletzung Hinterbein </h1>
 	  </div>
       <div data-role="main" class="ui-content">
@@ -1353,20 +1366,20 @@ Die hinterlegten Zielgrößen für die tierbezogenen Indikatoren finden Sie <a h
     <!-- hinterhand -->
     <div data-role="page" id="hinterhand">
 	<div data-role = "header">
-        <a href = "#popupMenuHinterhand"  data-rel = "popup" class = "ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid ui-btn-icon-notext"> Navigation </a>
-		<div data-role = "popup" id = "popupMenuHinterhand">
-		<ul data-role = "listview" data-inset = "true" >
-		<li>
-            <a href="#start">Herdenbetrachtung</a>
-          </li>
-          <li>
-            <a href="#transition_In_Den_Stall">Einzeltierbetrachtung</a>
-          </li>
-          <li>
-            <a href="#auswertung">Auswertung</a>
-          </li>
-		</ul>
-		</div>		
+        <!-- <a href = "#popupMenuHinterhand"  data-rel = "popup" class = "ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid ui-btn-icon-notext"> Navigation </a> -->
+		<!-- <div data-role = "popup" id = "popupMenuHinterhand"> -->
+		<!-- <ul data-role = "listview" data-inset = "true" > -->
+		<!-- <li> -->
+            <!-- <a href="#start">Herdenbetrachtung</a> -->
+          <!-- </li> -->
+          <!-- <li> -->
+            <!-- <a href="#transition_In_Den_Stall">Einzeltierbetrachtung</a> -->
+          <!-- </li> -->
+          <!-- <li> -->
+            <!-- <a href="#auswertung">Auswertung</a> -->
+          <!-- </li> -->
+		<!-- </ul> -->
+		<!-- </div>		 -->
 	  <h1> Verschmutzung Hinterhand </h1>
 	  </div>
       <div data-role="main" class="ui-content">
@@ -1425,20 +1438,20 @@ Die hinterlegten Zielgrößen für die tierbezogenen Indikatoren finden Sie <a h
     <!-- beine -->
     <div data-role="page" id="beine">
 	<div data-role = "header">
-        <a href = "#popupMenuBeine"  data-rel = "popup" class = "ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid ui-btn-icon-notext"> Navigation </a>
-		<div data-role = "popup" id = "popupMenuBeine">
-		<ul data-role = "listview" data-inset = "true" >
-		<li>
-            <a href="#start">Herdenbetrachtung</a>
-          </li>
-          <li>
-            <a href="#transition_In_Den_Stall">Einzeltierbetrachtung</a>
-          </li>
-          <li>
-            <a href="#auswertung">Auswertung</a>
-          </li>
-		</ul>
-		</div>		
+        <!-- <a href = "#popupMenuBeine"  data-rel = "popup" class = "ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid ui-btn-icon-notext"> Navigation </a> -->
+		<!-- <div data-role = "popup" id = "popupMenuBeine"> -->
+		<!-- <ul data-role = "listview" data-inset = "true" > -->
+		<!-- <li> -->
+            <!-- <a href="#start">Herdenbetrachtung</a> -->
+          <!-- </li> -->
+          <!-- <li> -->
+            <!-- <a href="#transition_In_Den_Stall">Einzeltierbetrachtung</a> -->
+          <!-- </li> -->
+          <!-- <li> -->
+            <!-- <a href="#auswertung">Auswertung</a> -->
+          <!-- </li> -->
+		<!-- </ul> -->
+		<!-- </div>		 -->
 	  <h1> Verschmutzung Beine </h1>
 	  </div>
       <div data-role="main" class="ui-content">
@@ -1491,20 +1504,20 @@ Die hinterlegten Zielgrößen für die tierbezogenen Indikatoren finden Sie <a h
     <!-- euter -->
     <div data-role="page" id="euter">
 	<div data-role = "header">
-        <a href = "#popupMenuEuter"  data-rel = "popup" class = "ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid ui-btn-icon-notext"> Navigation </a>
-		<div data-role = "popup" id = "popupMenuEuter">
-		<ul data-role = "listview" data-inset = "true" >
-		<li>
-            <a href="#start">Herdenbetrachtung</a>
-          </li>
-          <li>
-            <a href="#transition_In_Den_Stall">Einzeltierbetrachtung</a>
-          </li>
-          <li>
-            <a href="#auswertung">Auswertung</a>
-          </li>
-		</ul>
-		</div>		
+        <!-- <a href = "#popupMenuEuter"  data-rel = "popup" class = "ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid ui-btn-icon-notext"> Navigation </a> -->
+		<!-- <div data-role = "popup" id = "popupMenuEuter"> -->
+		<!-- <ul data-role = "listview" data-inset = "true" > -->
+		<!-- <li> -->
+            <!-- <a href="#start">Herdenbetrachtung</a> -->
+          <!-- </li> -->
+          <!-- <li> -->
+            <!-- <a href="#transition_In_Den_Stall">Einzeltierbetrachtung</a> -->
+          <!-- </li> -->
+          <!-- <li> -->
+            <!-- <a href="#auswertung">Auswertung</a> -->
+          <!-- </li> -->
+		<!-- </ul> -->
+		<!-- </div>		 -->
 	  <h1> Verschmutzung Euter </h1>
 	  </div>
       <div data-role="main" class="ui-content">
@@ -1557,20 +1570,20 @@ Die hinterlegten Zielgrößen für die tierbezogenen Indikatoren finden Sie <a h
     <!-- bauch -->
     <div data-role="page" id="bauch">
 	<div data-role = "header">
-        <a href = "#popupMenuBauch"  data-rel = "popup" class = "ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid ui-btn-icon-notext"> Navigation </a>
-		<div data-role = "popup" id = "popupMenuBauch">
-		<ul data-role = "listview" data-inset = "true" >
-		<li>
-            <a href="#start">Herdenbetrachtung</a>
-          </li>
-          <li>
-            <a href="#transition_In_Den_Stall">Einzeltierbetrachtung</a>
-          </li>
-          <li>
-            <a href="#auswertung">Auswertung</a>
-          </li>
-		</ul>
-		</div>		
+        <!-- <a href = "#popupMenuBauch"  data-rel = "popup" class = "ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid ui-btn-icon-notext"> Navigation </a> -->
+		<!-- <div data-role = "popup" id = "popupMenuBauch"> -->
+		<!-- <ul data-role = "listview" data-inset = "true" > -->
+		<!-- <li> -->
+            <!-- <a href="#start">Herdenbetrachtung</a> -->
+          <!-- </li> -->
+          <!-- <li> -->
+            <!-- <a href="#transition_In_Den_Stall">Einzeltierbetrachtung</a> -->
+          <!-- </li> -->
+          <!-- <li> -->
+            <!-- <a href="#auswertung">Auswertung</a> -->
+          <!-- </li> -->
+		<!-- </ul> -->
+		<!-- </div>		 -->
 	  <h1> Verschmutztung Bauch </h1>
 	  </div>
       <div data-role="main" class="ui-content">
@@ -1623,20 +1636,20 @@ Die hinterlegten Zielgrößen für die tierbezogenen Indikatoren finden Sie <a h
     <!-- koerperkonditionen -->
     <div data-role="page" id="koerperkonditionen">
 	<div data-role = "header">
-        <a href = "#popupMenuKoerperkonditionen"  data-rel = "popup" class = "ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid ui-btn-icon-notext"> Navigation </a>
-		<div data-role = "popup" id = "popupMenuKoerperkonditionen">
-		<ul data-role = "listview" data-inset = "true" >
-		<li>
-            <a href="#start">Herdenbetrachtung</a>
-          </li>
-          <li>
-            <a href="#transition_In_Den_Stall">Einzeltierbetrachtung</a>
-          </li>
-          <li>
-            <a href="#auswertung">Auswertung</a>
-          </li>
-		</ul>
-		</div>		
+        <!-- <a href = "#popupMenuKoerperkonditionen"  data-rel = "popup" class = "ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid ui-btn-icon-notext"> Navigation </a> -->
+		<!-- <div data-role = "popup" id = "popupMenuKoerperkonditionen"> -->
+		<!-- <ul data-role = "listview" data-inset = "true" > -->
+		<!-- <li> -->
+            <!-- <a href="#start">Herdenbetrachtung</a> -->
+          <!-- </li> -->
+          <!-- <li> -->
+            <!-- <a href="#transition_In_Den_Stall">Einzeltierbetrachtung</a> -->
+          <!-- </li> -->
+          <!-- <li> -->
+            <!-- <a href="#auswertung">Auswertung</a> -->
+          <!-- </li> -->
+		<!-- </ul> -->
+		<!-- </div>		 -->
 	  <h1> Körperkondition </h1>
 	  </div>
       <div data-role="main" class="ui-content">
@@ -1683,20 +1696,20 @@ Die hinterlegten Zielgrößen für die tierbezogenen Indikatoren finden Sie <a h
     <!-- Bewegungsverhalten- Kopfhaltung -->
     <div data-role="page" id="kopfhaltung">
 	<div data-role = "header">
-        <a href = "#popupMenuKopfhaltung"  data-rel = "popup" class = "ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid ui-btn-icon-notext"> Navigation </a>
-		<div data-role = "popup" id = "popupMenuKopfhaltung">
-		<ul data-role = "listview" data-inset = "true" >
-		<li>
-            <a href="#start">Herdenbetrachtung</a>
-          </li>
-          <li>
-            <a href="#transition_In_Den_Stall">Einzeltierbetrachtung</a>
-          </li>
-          <li>
-            <a href="#auswertung">Auswertung</a>
-          </li>
-		</ul>
-		</div>		
+        <!-- <a href = "#popupMenuKopfhaltung"  data-rel = "popup" class = "ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid ui-btn-icon-notext"> Navigation </a> -->
+		<!-- <div data-role = "popup" id = "popupMenuKopfhaltung"> -->
+		<!-- <ul data-role = "listview" data-inset = "true" > -->
+		<!-- <li> -->
+            <!-- <a href="#start">Herdenbetrachtung</a> -->
+          <!-- </li> -->
+          <!-- <li> -->
+            <!-- <a href="#transition_In_Den_Stall">Einzeltierbetrachtung</a> -->
+          <!-- </li> -->
+          <!-- <li> -->
+            <!-- <a href="#auswertung">Auswertung</a> -->
+          <!-- </li> -->
+		<!-- </ul> -->
+		<!-- </div>		 -->
 	  <h1> Kopfhaltung </h1>
 	  </div>
       <div data-role="main" class="ui-content">
@@ -1733,20 +1746,20 @@ Die hinterlegten Zielgrößen für die tierbezogenen Indikatoren finden Sie <a h
     <!-- Bewegungsverhalten - LCS -->
     <div data-role="page" id="LCS">
 	<div data-role = "header">
-        <a href = "#popupMenuLCS"  data-rel = "popup" class = "ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid ui-btn-icon-notext"> Navigation </a>
-		<div data-role = "popup" id = "popupMenuLCS">
-		<ul data-role = "listview" data-inset = "true" >
-		<li>
-            <a href="#start">Herdenbetrachtung</a>
-          </li>
-          <li>
-            <a href="#transition_In_Den_Stall">Einzeltierbetrachtung</a>
-          </li>
-          <li>
-            <a href="#auswertung">Auswertung</a>
-          </li>
-		</ul>
-		</div>		
+        <!-- <a href = "#popupMenuLCS"  data-rel = "popup" class = "ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid ui-btn-icon-notext"> Navigation </a> -->
+		<!-- <div data-role = "popup" id = "popupMenuLCS"> -->
+		<!-- <ul data-role = "listview" data-inset = "true" > -->
+		<!-- <li> -->
+            <!-- <a href="#start">Herdenbetrachtung</a> -->
+          <!-- </li> -->
+          <!-- <li> -->
+            <!-- <a href="#transition_In_Den_Stall">Einzeltierbetrachtung</a> -->
+          <!-- </li> -->
+          <!-- <li> -->
+            <!-- <a href="#auswertung">Auswertung</a> -->
+          <!-- </li> -->
+		<!-- </ul> -->
+		<!-- </div>		 -->
 	  <h1> Gangbild </h1>
 	  </div>
       <div data-role="main" class="ui-content">
@@ -1789,17 +1802,11 @@ Die hinterlegten Zielgrößen für die tierbezogenen Indikatoren finden Sie <a h
     <!-- Auswertung -->
     <div data-role="page" id="auswertung">
 	<div data-role = "header">
-        <a href = "#popupMenuAuswertung"  data-rel = "popup" class = "ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid ui-btn-icon-notext ui-btn-icon-notext"> Navigation </a>
+        <a href = "#popupMenuAuswertung"  data-rel = "popup" class = "ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-back ui-btn-icon-notext"> Navigation </a>
 		<div data-role = "popup" id = "popupMenuAuswertung">
 		<ul data-role = "listview" data-inset = "true" >
-		<li>
-            <a href="#start">Herdenbetrachtung</a>
-          </li>
           <li>
-            <a href="#transition_In_Den_Stall">Einzeltierbetrachtung</a>
-          </li>
-          <li>
-            <a href="#auswertung">Auswertung</a>
+            <a href="#start" onclick = "resetAll();">Neustart</a>
           </li>
 		</ul>
 		</div>		

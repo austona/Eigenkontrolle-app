@@ -471,9 +471,6 @@ $('#LCS_Low_Counter').val(LCS_Low_Overall);
 });
 
 
-
-
-
 function copyNumber() {
 var LCS_Low_Overall = $('#LCS_Low_Counter').val(); 
 var LCS_High_Overall = $('#LCS_High_Counter').val(); 
@@ -492,7 +489,7 @@ $('#tiere_Anzahl').val(herdengroesse);
 }
 
 
-
+//Die ID des letzten geklickten Bildes wird gespeichert. Auch wird die Anzahl der Verbleibenden Kühe in der Anzeige angepasst.
 function rememberID(clicked_ID) {
 $('#save_LastID').val(clicked_ID);
 var remaining_Cows_Number = $('#tiere_Anzahl').val();
@@ -508,6 +505,8 @@ for (i = 0; i < numberPages; i++){
 document.getElementsByClassName("remaining_Cows")[i].setAttribute("value", "Verbleibende Kühe: " + remaining_Cows_Number);	
 }
 }
+
+// Es wird geprüft, ob gerade die letzte Kuh dran ist. Wenn ja, dann wird zur auswertung weitergeleitet, ansonsten geht es zurück an den anfang
 function numberControl() {
 var controlNumber = $('#tiere_Anzahl').val() - 1;
 $('#tiere_Anzahl').val(controlNumber);
@@ -517,6 +516,7 @@ if (controlNumber <= 0)
 	window.location.href = "#karpalgelenk_Vorne"
 }
 
+//Der Counter muss wieder hochgestuft werden, wenn ein LCS Bild korrigiert wird. Außerdem wird eine Doppelkorrektur und eine korrektur ganz am Anfang verhindert.
 function adjustCounter() {
 	$('#isDoubleCorrection').val(0);
 var curr_Id = $('#save_LastID').val();
@@ -530,6 +530,8 @@ var curr_Id = $('#save_LastID').val();
 	}
 	else if (curr_Id == "karpalgelenk_Vorne_Weiter"){
 		window.location.href = "#karpalgelenk_Vorne"
+		$('#isDoubleCorrection').val(1);
+		window.alert('Sie müssen zuerst eine Eingabe tätigen, bevor Sie diese korrigieren können');
 	}
 	
 	else if (curr_Id.substring(0,5) == "korre"){
@@ -546,12 +548,12 @@ var curr_Id = $('#save_LastID').val();
 	
 }
 
+// Sofern nicht zwei mal hintereinander auf zurück gedrückt wurde, wird man zur letzten Seite geleitet
 function correctionConnection(page) {
 	if ($('#isDoubleCorrection').val() == 0) {
 	window.location.href = "#" + page;
 	}
 }
-
 
 
 <!-- $(document).on('swipeleft', '.ui-page', function(event){     -->
@@ -636,6 +638,8 @@ else
 	 $('#neuerkrankungsrate_Bewertung').css('background-color', '#FF0000'); 
 
 });
+
+
 
 var schlechte_Heilungsaussichten = $('#schlechte_Heilungsaussichten').val();
 $('#schlechte_Heilungsaussichten_Copy').val(schlechte_Heilungsaussichten); 
