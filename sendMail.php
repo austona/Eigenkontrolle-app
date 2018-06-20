@@ -61,11 +61,8 @@ if(!$mail->Send()) {
   
 	
 } else {
-	// echo 'Der Bericht wurde versendet.';
-	// flush();
-	header('Location: mailSuccess.html');
-	// var_dump($latest_filename,$path);
-   
+		// <script>document.location.href = "#mailSuccess";</script>;
+		header('Location: mailSuccess.html');
 }
 
 

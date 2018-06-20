@@ -24,7 +24,7 @@ if(!empty($_POST['data'])){
     fclose($file);
 	
 } else {
-    echo "No Data Sent";
+    header('Location: upload_Failure.html');
 }
 
 ?>
