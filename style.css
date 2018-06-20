@@ -1,0 +1,63 @@
+
+@media (min-width: 857px) {
+	/* Show the table header rows and set all cells to display: table-cell */
+	.table-breakpoint td,
+	.table-breakpoint th,
+	.table-breakpoint tbody th,
+	.table-breakpoint tbody td,
+	.table-breakpoint thead td,
+	.table-breakpoint thead th {
+		display: table-cell;
+		margin: 0;
+	}
+	/* Hide the labels in each cell */
+	.table-breakpoint td .ui-table-cell-label,
+	.table-breakpoint th .ui-table-cell-label {
+		display: none;
+	}
+}
+@media (max-width: 856px) {
+	/* Show the table header rows and set all cells to display: table-cell */
+	.table-breakpoint td,
+	.table-breakpoint th,
+	.table-breakpoint tbody th,
+	.table-breakpoint tbody td, {
+		display: block;
+		margin: 0;
+	}
+	/* /* Hide the labels in each cell */ 
+	/* .table-breakpoint td .ui-table-cell-label, */
+	/* .table-breakpoint th .ui-table-cell-label { */
+		/* display: none; */
+	/* } */
+	.table-breakpoint thead td,
+	.table-breakpoint thead th {
+		display: none; 
+}
+}
+img {
+	/* max-width: 175px; */
+	width: 100%;
+	
+}
+
+.ui-header .ui-title {
+    margin-right: 5%;
+    margin-left: 15%;
+}
+
+
+
+
+@media (max-width: 856px) {
+
+.category_Auswertung {
+    outline :thin solid;
+    margin-bottom: 0.5em;
+}
+.category_Auswertung th {
+    font-size: x-large; 
+    text-align: center;
+    
+}
+}

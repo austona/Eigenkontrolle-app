@@ -26,5 +26,9 @@
       "sizes": "192x192"
     }
   ],
+<<<<<<< HEAD
   "start_url": "../index.html/#start"
+=======
+  "start_url": "../index.html"
+>>>>>>> 2de149434d94601d82da3b7f27b852e5471aa796
 }

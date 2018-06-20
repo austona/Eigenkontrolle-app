@@ -61,7 +61,10 @@ if(!$mail->Send()) {
   
 	
 } else {
+<<<<<<< HEAD
 		// <script>document.location.href = "#mailSuccess";</script>;
+=======
+>>>>>>> 2de149434d94601d82da3b7f27b852e5471aa796
 		header('Location: mailSuccess.html');
 }
 

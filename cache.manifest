@@ -1,4 +1,5 @@
 ﻿CACHE MANIFEST
+<<<<<<< HEAD
 #v3.0 vom 26.05.2018
 index.html
 impressum.html
@@ -6,6 +7,15 @@ style_1_1.css
 favicon.ico
 html2canvas.js
 javascript_4_1.js
+=======
+#v3.0 vom 04.04.2018
+index.html
+impressum.html
+style.css
+favicon.ico
+html2canvas.js
+javascript.js
+>>>>>>> 2de149434d94601d82da3b7f27b852e5471aa796
 FileSaver.js
 jquery-2x.min.js
 jquery.mobile-1.4.5.css
@@ -54,7 +64,10 @@ images/BCS_High.jpg
 images/BCS_Low.jpg
 images/hfwu_logo.jpg
 images/kein_befund.jpg
+<<<<<<< HEAD
 images/befund.jpg
+=======
+>>>>>>> 2de149434d94601d82da3b7f27b852e5471aa796
 images/launcher-icon-1x.png
 images/launcher-icon-2x.png
 images/launcher-icon-3x.png
